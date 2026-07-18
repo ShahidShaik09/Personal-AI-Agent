@@ -1,0 +1,14 @@
+# Private files - never upload!
+credentials.json
+token_0.json
+token_1.json
+token_2.json
+token_3.json
+*.json
+debug_*.png
+job_report.txt
+email_summary.txt
+daily_summary.txt
+jobs_found.json
+__pycache__/
+*.pyc
