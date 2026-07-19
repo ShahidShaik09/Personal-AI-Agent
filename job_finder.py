@@ -239,7 +239,6 @@ def main():
             print(f" Error: {e}")
             
         finally:
-            input("\nEnter press cheyyi to close...")
             context.close()
 
 if __name__ == "__main__":

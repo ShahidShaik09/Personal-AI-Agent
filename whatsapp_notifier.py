@@ -100,21 +100,9 @@ def main():
     print(summary)
     print("\n" + "="*50)
     
-    # Confirm before sending
-    confirm = input("\n WhatsApp lo pamputava? (y/n): ")
-    
-    if confirm.lower() == 'y':
-        print("\n  WhatsApp Web open avutundi...")
-        print("  Browser lo WhatsApp Web logged in ga undi check cheyyi!")
-        time.sleep(2)
-        
-        send_whatsapp_message(YOUR_NUMBER, summary)
-    else:
-        print(" Cancelled!")
-        # Save summary anyway
-        with open('daily_summary.txt', 'w', encoding='utf-8') as f:
-            f.write(summary)
-        print("✅ Saved to daily_summary.txt!")
+    print("\n⚠️  WhatsApp Web open avutundi...")
+    time.sleep(2)
+    send_whatsapp_message(YOUR_NUMBER, summary)
 
 if __name__ == "__main__":
     main()
